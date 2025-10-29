@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: white;
+            border-top: 1px solid rgb(168, 166, 166);
+            align-items: center;
+            position: fixed;
+
+        }
+
+        ul {
+            display: flex;
+            gap: 40px;
+            list-style-type: none;
+
+
+        }
+
+        li a {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .logo h1 {
+            color: rgb(9, 223, 151);
+            text-transform: uppercase;
+        }
+
+        select {
+            border: none;
+            outline: none;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        button {
+            width: 120px;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            color: white;
+            text-transform: capitalize;
+            background-color: hsl(160, 92%, 45%);
+            /* margin-right: 50px; */
+        }
+
+        .bars {
+
+            font-size: 40px;
+            color: rgb(9, 223, 151);
+            display: none;
+            margin-right: 10px;
+
+
+        }
+
+        @media only screen and (max-width:768px) {
+            .sec1_text {
+                margin-left: 20px;
+                text-align: center;
+            }
+
+            .sec1_text h1 {
+                font-size: 10px;
+                margin-bottom: 30px;
+            }
+
+            .sec1_text p {
+                font-size: 16px;
+            }
+
+            .sec1_text button {
+                width: 150px;
+                font-size: 16px;
+            }
+
+            ul {
+                display: none;
+
+            }
+
+            .bars {
+                display: inline;
+                /* margin-right: 70px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Mentor</h1>
+        </div>
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">courses</a></li>
+            <li><a href="#">Trainers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">pricing</a></li>
+
+            <select name="" id="">
+                <option value="">dropdown 1</option>
+                <option value="">dropdown 2</option>
+                <option value="">dropdown 3</option>
+                <option value="">dropdown 4</option>
+            </select>
+        </ul>
+        <div class="navbtn">
+            <button> get stated</button>
+            <i class="fa-solid fa-bars bars"></i>
+        </div>
+            
+    </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sec1 {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1374');
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+
+            width: 400px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        .sec2 {
+            width: 100%;
+            height: 300px;
+            background-color: red;
+
+            clip-path: polygon(0% 0%, 99.22% 0%, 99.22% 26.57%, 49.61% 45.14%, 0% 26.57%);
+
+        }
+
+        .mainSec3 {
+            background-image: url('https://www.tooplate.com/templates/2095_level/img/img-03.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .sec3 {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.699);
+
+        }
+
+        .sec3Text {
+            width: 400px;
+        }
+
+        .card {
+            display: flex;
+            width: 400px;
+        }
+
+        .card img {
+            width: 100px;
+        }
+
+        .map {
+            display: flex;
+        }
+
+        .map img {
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+        }
+
+        form {
+            background-color: white;
+            display: flex;
+            width: 300px;
+            height: 300px;
+            /* justify-content: center; */
+            gap: 10px;
+            flex-direction: column;
+            border-radius: 30px;
+
+        }
+
+        input {
+            padding: 10px;
+            background-color: rgb(223, 222, 222);
+            border: none;
+            outline: none;
+            border-radius: 20px;
+        }
+
+        .footer1 {
+            align-items: center;
+            display: flex;
+            gap: 30px;
+            justify-content: space-around;
+            flex-direction: column;
+
+            background-color: lightblue;
+            padding: 40px;
+            /* height: 600px; */
+        }
+
+        @media only screen and (min-width:600px) {
+            .footer1 {
+                flex-direction: row;
+            }
+
+            .map img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer1">
+            <div class="map">
+                <img src="https://www.tooplate.com/templates/2095_level/img/img-03.jpg" alt="">
+
+            </div>
+            <form action="">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="name">
+            </form>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </footer>
+    <!-- <div class="sec1">
+        <div class="form">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="sec2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptas id et, omnis fuga culpa, quae unde
+            earum, a quia ipsum est harum ab facilis? Ad delectus suscipit dolorum explicabo.</p>
+    </div> -->
+    <div class="mainSec3">
+        <div class="sec3">
+            <div class="sec3Text">
+                <strong> Lorem ipsum</strong> <br> dolor sit.
+            </div>
+            <div class="sec3Cards">
+                <div class="card">
+                    <img src="https://www.tooplate.com/templates/2095_level/img/img-03.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere provident pariatur. Expedita
+                        facere sed nihil sequi natus et ipsum libero animi dignissimos, adipisci ea accusamus, odit, at
+                        tempore nobis.</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.tooplate.com/templates/2095_level/img/img-03.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere provident pariatur. Expedita
+                        facere sed nihil sequi natus et ipsum libero animi dignissimos, adipisci ea accusamus, odit, at
+                        tempore nobis.</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.tooplate.com/templates/2095_level/img/img-03.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere provident pariatur. Expedita
+                        facere sed nihil sequi natus et ipsum libero animi dignissimos, adipisci ea accusamus, odit, at
+                        tempore nobis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

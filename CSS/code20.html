@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: blueviolet;
+            color: white;
+            padding: 20px;
+        }
+
+        ul {
+            display: none;
+            list-style-type: none;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .section {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        .text {}
+
+
+        @media only screen and (min-width:500px) {
+            ul {
+                display: flex;
+                gap: 20px;
+
+            }
+
+            .bar {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:700px) {
+            .section {
+                flex-direction: row;
+                text-align: start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">logo</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Project</a></li>
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars-staggered"></i>
+
+        </div>
+    </nav>
+
+    <div class="section">
+        <div class="text">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eligendi tenetur fuga saepe in non porro
+                nemo
+                consequuntur distinctio aperiam rem aliquam, nisi voluptates id debitis excepturi, accusamus alias enim?
+            </p>
+            <button>Click me </button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1374"
+            alt="">
+    </div>
+</body>
+
+</html>

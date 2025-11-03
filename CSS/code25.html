@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background: linear-gradient(45deg, red, blue, yellow);
+
+            background: radial-gradient(circle at center, blue, red, green);
+
+            animation: move 2s linear infinite alternate;
+        }
+
+        .icon h1 {
+            margin: 100px;
+            font-size: 200px;
+            animation: move 2s linear infinite alternate;
+
+
+        }
+
+
+        @keyframes move {
+            0% {
+                /* transform: translateY(0px); */
+                transform: scale(0.5);
+            }
+
+            100% {
+                transform: scale(1);
+                /* transform: translateY(200px); */
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box"></div> -->
+    <div class="icon">
+        <h1>❤️</h1>
+    </div>
+</body>
+
+</html>

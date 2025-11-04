@@ -17,15 +17,15 @@
         }
 
         .typing-text {
-            color: white;
+            color: #00ffff;
             font-size: 40px;
             font-family: sans-serif;
-
             white-space: nowrap;
             overflow: hidden;
+            border-right: 3px solid #00ffff;
             width: 0;
             text-transform: uppercase;
-            animation: typing 3s linear steps(20, end) infinite alternate, blink 1s step-end infinite;
+            animation: typing 4s steps(21, end) infinite alternate, blink 1s step-end infinite;
         }
 
         @keyframes typing {
@@ -34,7 +34,7 @@
             }
 
             to {
-                width: 11ch;
+                width: 21ch;
             }
         }
 
@@ -47,7 +47,7 @@
 </head>
 
 <body>
-    <h1 class="typing-text">Ganesh Dutt</h1>
+    <h1 class="typing-text">hey i`m Ganesh Dutt</h1>
 </body>
 
 </html>

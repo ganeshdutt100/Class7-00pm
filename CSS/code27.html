@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(23, 23, 61) 46%, rgb(5, 44, 52) 92%);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+
+        .typing-text {
+            color: white;
+            font-size: 40px;
+            font-family: sans-serif;
+
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            text-transform: uppercase;
+            animation: typing 3s linear steps(20, end) infinite alternate, blink 1s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 11ch;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="typing-text">Ganesh Dutt</h1>
+</body>
+
+</html>

@@ -1,9 +1,12 @@
 console.log("Code2");
 
 let a = 2;
+let b = "two";
+console.log(a == b);
+
 // (condition)?true:false
-let output = a % 2 == 0 ? "Even" : "Odd";
-console.log(output);
+// let output = a % 2 == 0 ? "Even" : "Odd";
+// console.log(output);
 
 // let a = true;
 // let b = false;

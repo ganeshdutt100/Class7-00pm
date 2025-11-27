@@ -109,3 +109,8 @@ console.log("Hello from js");
 // fun(10, 6);
 
 // console.log(Date());
+
+function fun() {
+  console.log("i am Clicked");
+  //   alert("i am button ");
+}

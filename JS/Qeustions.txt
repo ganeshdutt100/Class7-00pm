@@ -85,3 +85,112 @@ A) 10
 B) 20 
 C) 30 ✔️
 D) [10, 20, 30]
+
+
+
+Q1. The "Cinema Ticket" Checker
+
+Scenario: Ek cinema hall mein ticket price age ke hisaab se hai.
+
+Input: User ki age.
+
+Logic:
+
+Agar age < 12 hai: Ticket Price = 100 (Child).
+
+Agar age >= 12 aur < 60 hai: Ticket Price = 200 (Adult).
+
+Agar age >= 60 hai: Ticket Price = 150 (Senior Citizen).
+
+Learning: Basic Comparison Operators (<, >).
+
+let age =  60 
+if(age <  12 ){
+    cc(Ticket Price = 100 (Child).)
+}
+
+Q-2 The "Electricity Bill" Calculator (Most Popular)
+
+Scenario: Bijli ka bill calculate karna hai units ke hisaab se.
+
+Input: units.
+
+Logic:
+
+Pehle 100 units: Free (0 cost).
+
+Agle 100 units (101-200): 5 Rs per unit.
+
+Uske baad (200+): 10 Rs per unit.
+
+Example: Agar 250 units hain to bill kitna hoga?
+
+Learning: Calculation logic + else-if.
+
+
+Q3 - The "Exam Grader"
+
+Scenario: Marks ke hisaab se Grade dena.
+
+Input: marks (0 se 100).
+
+Logic:
+
+90 - 100: "A+ Grade"
+
+80 - 89: "A Grade"
+
+70 - 79: "B Grade"
+
+60 - 69: "C Grade"
+
+Below 60: "Fail"
+
+(marks >= 90 && marks <= 100)
+
+
+
+Q4 - The "Login System" (Authentication)
+
+Scenario: User ko login karne dena hai.
+
+Variables:
+
+storedUsername = "admin"
+
+storedPassword = "1234"
+
+Input: inputUsername, inputPassword.
+
+Logic (Nested):
+
+Check: Kya inputUsername match karta hai?
+
+No: Print "Username Galat hai".
+
+Yes: (Ab andar jao) -> Check: Kya inputPassword match karta hai?
+
+No: Print "Password Galat hai".
+
+Yes: Print "Login Successful!".
+
+
+Q5- The "E-Commerce Coupon" (Discount Logic)
+
+Scenario: User checkout kar raha hai.
+
+Input: totalAmount, couponCode.
+
+Logic:
+
+Agar totalAmount >= 500 hai:
+
+Check karo: Kya couponCode == "DIWALI50" hai?
+
+Yes: Print "50 Rs Discount Applied".
+
+No: Print "No Discount. Invalid Coupon".
+
+Agar totalAmount < 500 hai:
+
+Print "Shopping kam hai, Discount ke liye 500 ka samaan khareedein".

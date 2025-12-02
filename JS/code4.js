@@ -68,7 +68,7 @@ let studentsMarks = 50;
 //   console.log("Error : Pehle card to lgao ");
 // }
 
-let day = 3;
+let day = 4;
 switch (day) {
   case 1:
     console.log("Monday");

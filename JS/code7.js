@@ -58,13 +58,45 @@
 // Fibonacci series up to n terms
 //  f(n) =  f(n-1) + f(n-2) for n > = 2
 
-let arr2 = [3, 1, 3, 5, 3, 8, 3];
+// 0 , 1 ,1,2,3,5,8,13 ...
+// 1st term  = 0
+// 2nd term  = 1
+// 3rd term  = 0  + 1 = 1
+// 4th term  = 1  + 1 = 2
+// 5th term  = 1  + 2 = 3
+// 6th term  = 2  + 3 = 5
+// next = a+ b
 
-let target = 3;
-let count = 0;
-for (let num of arr2) {
-  if (num === target) {
-    count++;
-  }
+// a  | b   | next
+// 0    1      1
+
+// // after shifting
+//  a  | b   | next
+// 1    1      2
+
+//  a  | b   | next
+// 1    2      3
+
+let n = 9;
+let a = 0;
+let b = 1;
+console.log(a);
+console.log(b);
+
+for (let i = 2; i < n; i++) {
+  let next = a + b;
+  console.log(next);
+  a = b;
+  b = next;
 }
-console.log(count);
+
+// let arr2 = [3, 1, 3, 5, 3, 8, 3];
+
+// let target = 3;
+// let count = 0;
+// for (let num of arr2) {
+//   if (num === target) {
+//     count++;
+//   }
+// }
+// console.log(count);

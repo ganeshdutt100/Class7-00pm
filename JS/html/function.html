@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <button onclick="greet()">Click me</button>
+</body>
+<script>
+    // Declaration Function 
+
+    // let a = prompt("Enter your number ")
+    // console.log(a);
+
+    // function fun() {
+    //     console.log("i am function ");
+    // }
+
+
+    // let a = 34;
+    // let b = 56
+    // function sum(h, i) {
+    //     return console.log(h + i);
+    // }
+    // sum(a, b)
+
+    // fun()
+
+
+    // function promptFun() {
+    //     let str = prompt("Enter your name");
+
+    //     console.log("Hello " + str);
+    // }
+
+
+
+    // function greet(name) {
+    //     return console.log("Hello " + name);
+    // }
+
+    // greet("world")
+
+    // Function Expression
+    // let add = function (a, b) {
+    //     return a + b;
+    // }
+    // console.log(add(12, 45));
+
+
+
+    // c-  Arrow function (ES6)
+    // const arrowFun = (a, b) => console.log(a * b);
+    // arrowFun(12, 2)
+
+
+    // const funName = (a, b) => {
+    //     return a * b
+    // }
+
+    // console.log(funName(12, 5));
+
+
+    //  D -IIFE
+    // (function () {
+    //     console.log("i am IIFE function");
+
+    // })()
+
+    function checkAge(age) {
+        if (age < 18) {
+            return "Too young"
+        }
+        return "Welcome"
+    }
+    let ageNumber = prompt("Enter your age ")
+    console.log(checkAge(ageNumber));
+
+
+    let a = Number(prompt("Enter first number "))
+    let b = Number(prompt("Enter second number "))
+    console.log(a + b);
+
+</script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function method</title>
+    <style>
+        * {
+            background-color: rgb(4, 4, 26);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let greet = (name) => console.log("Hello ", name);
+
+        // greet.call(null, "world")
+        greet("world")
+
+        function Emp(id, name) {
+            this.id = id
+            this.name = name
+        }
+
+        function PermanentEmp(id, name) {
+            Emp.call(this, id, name)
+        }
+        function TemporaryEmp(id, name) {
+            Emp.call(this, id, name)
+        }
+
+        let pEmp = new PermanentEmp(101, "Ganesh")
+        let tEmp = TemporaryEmp(102, "Rahul")
+
+        console.log(pEmp.name);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("bindMethod");
+
+        // const student = {
+        //     name: "Vaishali",
+        //     getName: function () {
+        //         console.log(this.name);
+
+        //     }
+        // }
+
+        // const showName = student.getName;
+        // showName();
+
+        // const boundFunction = student.getName.bind(student)
+        // boundFunction();
+
+
+        // functionName.bind(thisValue, arg1, arg2,...)
+
+
+        function greet(city, country) {
+            console.log(`hello ${this.name} from ${city}, ${country}`);
+
+        }
+        let userName = {
+            name: "Kartik"
+        }
+
+        const greetUser = greet.bind(userName, "Mathura", "India")
+        greetUser();
+    </script>
+</body>
+
+</html>

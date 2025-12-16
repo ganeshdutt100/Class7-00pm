@@ -15,27 +15,39 @@
 
 <body>
     <script>
-        let greet = (name) => console.log("Hello ", name);
+        // let greet = (name) => console.log("Hello ", name);
 
-        // greet.call(null, "world")
-        greet("world")
+        // // greet.call(null, "world")
+        // greet("world")
 
-        function Emp(id, name) {
-            this.id = id
-            this.name = name
-        }
+        // function Emp(id, name) {
+        //     this.id = id
+        //     this.name = name
+        // }
 
-        function PermanentEmp(id, name) {
-            Emp.call(this, id, name)
-        }
-        function TemporaryEmp(id, name) {
-            Emp.call(this, id, name)
-        }
+        // function PermanentEmp(id, name) {
+        //     Emp.call(this, id, name)
+        // }
+        // function TemporaryEmp(id, name) {
+        //     Emp.call(this, id, name)
+        // }
 
-        let pEmp = new PermanentEmp(101, "Ganesh")
-        let tEmp = TemporaryEmp(102, "Rahul")
+        // let pEmp = new PermanentEmp(101, "Ganesh")
+        // let tEmp = TemporaryEmp(102, "Rahul")
 
-        console.log(pEmp.name);
+        // console.log(pEmp.name);
+
+
+        let greet = (name, age) => console.log(name, age);
+        greet.apply(null, ["john", 34])
+
+
+        let arr = [12, 34, 567, 78, 5, 4, 32]
+        let max = Math.max.apply(this, arr)
+        let min = Math.min.apply(this, arr)
+        console.log(max, min);
+
+
 
 
     </script>

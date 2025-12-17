@@ -29,16 +29,42 @@
         // functionName.bind(thisValue, arg1, arg2,...)
 
 
-        function greet(city, country) {
-            console.log(`hello ${this.name} from ${city}, ${country}`);
+        // function greet(city, country) {
+        //     console.log(`hello ${this.name} from ${city}, ${country}`);
 
-        }
-        let userName = {
-            name: "Kartik"
-        }
+        // }
+        // let userName = {
+        //     name: "Kartik"
+        // }
 
-        const greetUser = greet.bind(userName, "Mathura", "India")
-        greetUser();
+        // const greetUser = greet.bind(userName, "Mathura", "India")
+        // greetUser();
+
+        // call, apply      bind
+
+
+        // let num = 12;
+        // let value = num.toString()
+        // console.log(value + 12);
+
+        // 3-  You are given two objects:
+
+        // const student = { name: "Amit" };
+        // const teacher = { name: "Rahul" };
+        //  Write a function printName(subject) and use call() to print the name of both objects with different subjects.
+
+
+        // const student = { name: "Amit" };
+        // const teacher = { name: "Rahul" };
+
+        // function printName(subject) {
+        //     console.log(this.name + " Teacher " + subject);
+
+        // }
+
+        // printName.call(student, "Math")
+        // printName.call(teacher, "Physics")
+
     </script>
 </body>
 

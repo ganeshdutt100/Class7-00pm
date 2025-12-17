@@ -112,5 +112,5 @@ console.log("Hello from js");
 
 function fun() {
   console.log("i am Clicked");
-  //   alert("i am button ");
+  alert("i am button ");
 }

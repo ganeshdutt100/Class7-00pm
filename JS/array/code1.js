@@ -29,7 +29,7 @@
 // console.log(arr);
 // console.log(arr);
 
-let arr1 = [12, 23, 45, 67, 89, 98, 79];
+// let arr1 = [12, 23, 45, 67, 89, 98, 79];
 // let arr1 = [1, 2, 3, 6, 4, 2, 9];
 // let arr1 = [12, 34, 56, 78, 9, 8, 7];
 // arr1.fill("JS", 3, 4);
@@ -40,10 +40,10 @@ let arr1 = [12, 23, 45, 67, 89, 98, 79];
 // arr1.unshift("arrJS");
 // arr1.sort();
 // arr1.splice(1, 2, "js");
-arr1.copyWithin(2, 1, 5);
-console.log(arr1);
-let arr1 = [12, 23, 45, 67, 89, 98, 79];
-let arr1 = [12, 23, 23, 45, 67, 89, 79];
+// arr1.copyWithin(2, 1, 5);
+// console.log(arr1);
+// let arr1 = [12, 23, 45, 67, 89, 98, 79];
+// let arr1 = [12, 23, 23, 45, 67, 89, 79];
 
 // arr num , even
 // sum ?

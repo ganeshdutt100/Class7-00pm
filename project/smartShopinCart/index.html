@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .mainHeading {
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .btn-add {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .btn-remove {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .btn-action {
+            background-color: #007bff;
+            color: white;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .total-section {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        #bill-slip {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="mainHeading"> Smart Shopping Cart</h1>
+    <div class="container">
+        <div class="box">
+            <h2>Available Products</h2>
+            <div id="product-list">
+                <!-- value -->
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Your Cart</h2>
+            <div class="actions">
+                <button class="btn-action" onclick="sortCart()">Sort by Price (Low to High)</button>
+                <button class="btn-action" onclick="generateBill()">print Bill</button>
+
+            </div>
+
+            <div id="cart-list"></div>
+            <div class="total-section">
+                Total-Price : <span id="total-price">0</span>
+            </div>
+            <div id="bill-slip"></div>
+        </div>
+
+    </div>
+    <script>
+        //  DATA 
+        const products = [
+            { id: 1, name: "Gaming Laptop ", price: 100000 },
+            { id: 2, name: "Mouse", price: 1000 },
+            { id: 3, name: "Keyboard", price: 1500 },
+            { id: 4, name: "HeadPhone", price: 2000 },
+            { id: 5, name: "Monitor", price: 15000 },
+        ];
+
+        let cart = []
+        console.log(cart);
+
+
+
+        const productContainer = document.getElementById('product-list');
+
+        productContainer.innerHTML = products.map(product => ` 
+        <div class="item">
+            <span>${product.name} - ${product.price} </span>
+            <button class="btn-add" onclick="addToCart(${product.id})" >ADD + </button>
+
+
+            </div>
+        `).join('')
+
+
+
+        function addToCart(id) {
+            const productToAdd = products.find(p => p.id === id)
+            cart.push(productToAdd)
+            updateUI()
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1)
+            updateUI()
+        }
+        function sortCart() {
+            cart.sort((a, b) => a.price - b.price)
+            updateUI();
+
+        }
+
+        function updateUI() {
+            const cartContainer = document.getElementById('cart-list')
+            const totalPrice = document.getElementById('total-price')
+
+
+            if (cart.length === 0) {
+                cartContainer.innerHTML = "<p>Cart is Empty</p>"
+                totalPrice.innerHTML = "0"
+                return;
+            }
+
+            cartContainer.innerHTML = cart.map((item, index) => `
+            <div class="item">
+                <span>${index + 1}. ${item.name} - ${item.price}</span>
+                <button class="btn-remove" onclick="removeFromCart(${index})" >remove</button>
+                </div>
+            `).join('')
+
+            const total = cart.reduce((acc, curr) => acc + curr.price, 0)
+            totalPrice.innerHTML = total
+
+        }
+
+
+        function generateBill() {
+            const slip = cart.map(item => item.name)
+            const slipString = slip.join(" | ")
+
+            document.getElementById('bill-slip').innerHTML = "Slip :  " + slipString
+
+
+        }
+
+
+
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

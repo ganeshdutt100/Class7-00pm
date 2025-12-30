@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .changeName {
+            color: rgb(252, 252, 252);
+            background-color: rgb(5, 42, 54);
+            padding: 30px;
+            border-radius: 40px;
+            text-align: center;
+            /* font-size: 30px; */
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="name" class="para">Lorem ipsum dolor sit amet.</p>
+    <p id="name" class="para">Lorem ipsum dolor sit amet.</p>
+    <p id="name" class="para">Lorem ipsum dolor sit amet.</p>
+    <p id="name" class="para">Lorem ipsum dolor sit amet.</p>
+    <p id="name" class="para">Lorem ipsum dolor sit amet.</p>
+    <!-- <button onclick="changeName()">Change Name</button> -->
+    <script>
+        // function changeName() {
+        // let name = document.getElementById("name");
+        // name.innerHTML = " <h1> Ganesh Dutt </h1>"
+
+        //     name.classList.add('changeName')
+        // }
+        // let classElement = document.getElementsByClassName('para')
+        // classElement[0].innerHTML = "Ganesh Dutt"
+        // console.log(classElement[1]);
+
+        // let tagElement = document.getElementsByTagName("p")
+        // tagElement[4].innerHTML = "Ganesh Dutt"
+
+
+        // let queryElement = document.querySelector('p')
+        // queryElement.innerHTML = "Ganesh Dutt"
+        let queryAllElement = document.querySelectorAll('.para')
+        queryAllElement[2].innerHTML = "Ganesh Dutt"
+
+
+    </script>
+</body>
+
+</html>

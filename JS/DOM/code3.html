@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO_DO_LIST</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="todo-container">
+        <h2>My To-Do List</h2>
+        <input type="text" placeholder="Enter your task">
+        <button id="addBtn">Add</button>
+
+        <ul id="todoList">
+
+        </ul>
+
+    </div>
+
+    <script>
+        const input = document.querySelector('input')
+        const addBtn = document.querySelector('#addBtn')
+        const todoList = document.querySelector('#todoList')
+
+        addBtn.addEventListener('click', () => {
+            const task = input.value.trim()
+            if (task == '') {
+                alert('Please enter a task')
+                return
+            }
+
+            const li = document.createElement('li')
+            const span = document.createElement('span')
+            const checkBox = document.createElement('input')
+            checkBox.type = 'checkbox'
+            const delBtn = document.createElement('button')
+
+
+            span.innerText = task
+            delBtn.innerText = "Delete"
+
+
+            checkBox.addEventListener('click', () => {
+                span.classList.toggle('completed')
+            })
+
+            delBtn.addEventListener('click', () => {
+                li.remove();
+            })
+            li.appendChild(checkBox)
+            li.appendChild(span)
+            li.appendChild(delBtn)
+
+            todoList.appendChild(li)
+            input.value = ''
+
+
+
+
+
+        })
+
+
+    </script>
+</body>
+
+</html>

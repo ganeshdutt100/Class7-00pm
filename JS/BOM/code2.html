@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <h1>Code2</h1>
+    <button>print</button>
     <script>
         // console.log("start");
         // setTimeout(() => {
@@ -22,13 +24,25 @@
 
         // clearTimeout(setValue)
 
-        setInterval(() => {
-            // console.log('i am Dutt');
-            let now = new Date();
-            console.log(now.toLocaleTimeString());
+        // let dateInterval = setInterval(() => {
+        //     // console.log('i am Dutt');
+        //     let now = new Date();
+        //     console.log(now.toLocaleTimeString());
 
 
-        }, 1000)
+        // }, 1000)
+
+        // clearInterval(dateInterval)
+
+        // setTimeout(() => {
+        //     close();
+        // }, 5000);
+
+        document.querySelector('button').addEventListener('click', () => {
+            // print()
+            open('https://ganeshdutt.netlify.app')
+        })
+
 
     </script>
 </body>

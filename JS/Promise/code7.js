@@ -1,12 +1,15 @@
-let promise = fetch("code2.txt");
+let promise = fetch("https://jsonplaceholder.typicode.com/users/1");
 promise
   .then((res) => {
     console.log(res.status);
     console.log(res.ok);
-    return res.text();
+    return res.json();
   })
   .then((data) => {
-    console.log(data);
+    // for (let x in data) {
+    //   console.log(data[x].username);
+    // }
+    console.log(data.address.street);
   })
   .catch((err) => {
     console.log(err);

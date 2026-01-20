@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(37, 37, 37);
+  background-image: url("https://images.unsplash.com/photo-1762081512133-30202f928bb9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwMXxDRHd1d1hKQWJFd3x8ZW58MHx8fHx8");
+  background-size: cover;
+}
+
+.card {
+  background: rgba(4, 4, 32, 0.354);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+.bio {
+  color: gray;
+}
+input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #15385f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result-container {
+  margin-top: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #182a3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  background: #0f2132;
+  padding: 10px;
+  border-radius: 5px;
+}
+.para {
+  background-color: rgb(5, 50, 66);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.error-msg {
+  color: red;
+  font-weight: bold;
+}

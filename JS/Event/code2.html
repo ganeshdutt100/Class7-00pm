@@ -39,7 +39,7 @@
     <script>
         let list = document.querySelector('ul')
         list.addEventListener('click', (e) => {
-            if (e.target.name === 'li') {
+            if (e.target.tagName === 'LI') {
                 alert(e.target.innerText)
             }
 

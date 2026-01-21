@@ -32,18 +32,41 @@
     <!-- parent -  child -->
     <!-- child - parent -->
 
-    <ul>
+    <!-- <ul>
         <li>item1</li>
         <li>item2</li>
-    </ul>
-    <script>
-        let list = document.querySelector('ul')
-        list.addEventListener('click', (e) => {
-            if (e.target.tagName === 'LI') {
-                alert(e.target.innerText)
-            }
+    </ul> -->
 
+
+    <form id="form">
+        <input type="text">
+        <button>Click me </button>
+    </form>
+    <script>
+        // let form = document.getElementById('form')
+        // form.addEventListener('submit', (e) => {
+        //     e.preventDefault()
+        //     let name = document.querySelector('input').value
+        //     alert("Name :  " + name)
+        // })
+
+        let input = document.querySelector('input')
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                alert("Enter key pressed")
+            }
         })
+
+
+
+
+        // let list = document.querySelector('ul')
+        // list.addEventListener('click', (e) => {
+        //     if (e.target.tagName === 'LI') {
+        //         alert(e.target.innerText)
+        //     }
+
+        // })
 
         // let parent = document.querySelector('.parent')
         // let child = document.querySelector('.child')

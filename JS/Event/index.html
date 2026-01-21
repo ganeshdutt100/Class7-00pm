@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button>Click me </button> -->
+    <form>
+        <input type="text" placeholder="Enter your name">
+
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        let form = document.querySelector('form')
+
+        form.addEventListener('keypress', (e) => {
+            console.log("key pressed : " + e.key);
+
+        })
+        // form.addEventListener('submit', (event) => {
+        //     event.preventDefault();
+        //     console.log(event);
+
+
+        // })
+
+        // let btn = document.querySelector('button')
+        // btn.onclick = function () {
+        //     alert("Button Clicked!")
+        // }
+
+        // btn.addEventListener('dblclick', () => {
+        //     alert("dblClick")
+        // })
+        // btn.addEventListener('mouseenter', () => {
+        //     btn.style.background = "yellow"
+        // })
+        // btn.addEventListener('mouseleave', () => {
+        //     btn.style.background = "red"
+        // })
+        // btn.addEventListener('click', (event) => {
+        //     console.log(event);
+
+        // })
+
+    </script>
+</body>
+
+</html>

@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 import "./App.css";
-import Cards from "./components/Cards";
-import Demo from "./components/Demo";
-import LikeButton from "./components/LikeButton";
-import Navbar from "./components/Navbar";
-import ThemeSwitcher from "./components/ThemeSwitcher";
-import File1 from "./components/File1";
+import UseEffect2 from "./components/Hooks/UseEffect2";
+// import Cards from "./components/Cards";
+// import Demo from "./components/Demo";
+// import LikeButton from "./components/Hooks/LikeButton";
+// import Navbar from "./components/Navbar";
+// import ThemeSwitcher from "./components/ThemeSwitcher";
+// import File1 from "./components/File1";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-  };
+  // const [darkMode, setDarkMode] = useState(false);
+  // const toggleTheme = () => {
+  //   setDarkMode(!darkMode);
+  // };
   return (
     <>
-      <div
+      <UseEffect2 />
+
+      {/* <div
         className={darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}
       >
         <div className="h-screen">
@@ -22,13 +25,13 @@ function App() {
           <button className="bg-yellow-500" onClick={toggleTheme}>
             {darkMode ? "Light Mode" : "DarkMode"}
           </button>
-          {/* <LikeButton />
-          <ThemeSwitcher /> */}
+          <LikeButton />
+          <ThemeSwitcher />
           <File1 />
 
           <Demo />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

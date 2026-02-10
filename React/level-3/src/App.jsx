@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import UseEffect2 from "./components/Hooks/UseEffect2";
+import CardsAPI from "./components/Hooks/CardsAPI";
 // import Cards from "./components/Cards";
 // import Demo from "./components/Demo";
 // import LikeButton from "./components/Hooks/LikeButton";
@@ -15,7 +16,8 @@ function App() {
   // };
   return (
     <>
-      <UseEffect2 />
+      <CardsAPI />
+      {/* <UseEffect2 /> */}
 
       {/* <div
         className={darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}
